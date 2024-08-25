@@ -74,7 +74,7 @@ Você conseguirá acessar a interface em: [http://localhost:3000](http://localho
 
 - Você primeiro deve rodar o [back-end do projeto](https://github.com/Leo-Henrique/getdemo-back-end) antes de rodar o front-end.
 - Se você alterou a porta da api no back-end, altere também a variável `API_BASE_URL` localizada no arquivo `.env.local` no front-end.
-- O Next.js possui por padrão um [cache](https://nextjs.org/docs/app/building-your-application/data-fetching/caching-and-revalidating) bem rígido com requisições HTTP para priorizar a performance do aplicativo. Se você modificou o banco de dados diretamente na api ou com algum tipo de IDE de banco do dados, exclua a pasta `.next` localizada na raiz do projeto ou copie e cole a seguinte linha no arquivo `src/app/layout.tsx` após as importações para ver as alterações:
+- O Next.js possui por padrão um [cache bem rígido com requisições HTTP](https://nextjs.org/docs/app/building-your-application/data-fetching/caching-and-revalidating) para priorizar a performance do aplicativo. Se você modificou o banco de dados diretamente na api ou com algum tipo de IDE de banco de dados, exclua a pasta `.next` localizada na raiz do projeto ou copie e cole a seguinte linha no arquivo `src/app/layout.tsx` após as importações para ver as alterações:
 
 ```ts
 export const revalidate = 0;
